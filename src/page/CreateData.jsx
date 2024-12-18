@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { BsSend } from "react-icons/bs";
 import { CgClose } from "react-icons/cg";
+import { FaCheck } from "react-icons/fa";
 
 const CreateData = () => {
   const [formData, setFormData] = useState({question: "", code: ""});
@@ -16,7 +16,6 @@ const CreateData = () => {
           body: JSON.stringify(formData)
         });
         const result = await res.json();
-        console.log(result.message);
         setFormData({question: "", code: ""});
         setPopUp(true);
     }
@@ -32,17 +31,17 @@ const CreateData = () => {
 
 
       <div className="text-xl sm:text-3xl text-center py-4 font-bold">SEND AN ANSWER WITH QUESTION</div>
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={(e) => handleSubmit(e)} className="mb-20">
           <div className="flex flex-col ">
             <label className="text-xl sm:text-2xl my-4">Question:</label>
-            <input type="text" value={formData.question} onChange={(e) => setFormData({...formData, question: e.target.value})} placeholder="Enter the Question" className="bg-slate-700 text-yellow-600 pl-4 rounded-xl text-xl sm:text-2xl py-3 border-0 outline-none focus:outline-yellow-600 focus:border-none"  />
+            <input type="text" value={formData.question} onChange={(e) => setFormData({...formData, question: e.target.value})} placeholder="Enter the Question" className="bg-[#2F2D29] text-white pl-4 rounded-xl text-md sm:text-lg py-3 border-0 outline-none placeholder-text-white"  />
           </div>
 
           <div className="flex flex-col ">
             <label className="text-xl sm:text-2xl my-4">Code:</label>
-            <textarea type="text" value={formData.code} onChange={(e) => setFormData({...formData, code:e.target.value})} placeholder="Enter the Code" className="bg-slate-700 text-yellow-600 pl-4 rounded-xl text-xl sm:text-2xl py-3 h-96 border-0 outline-none focus:outline-none focus:outline-yellow-600 focus:border-none" />
+            <textarea type="text" value={formData.code} onChange={(e) => setFormData({...formData, code:e.target.value})} placeholder="Enter the Code" className="bg-[#2F2D29] text-white pl-4 rounded-xl text-md sm:text-lg py-3 h-96 border-0 outline-none focus:outline-none" />
           </div>
-         <button type="submit" className="flex justify-center items-center gap-3 text-white py-3 px-7 bg-indigo-500 rounded-full text-xl mt-4 hover:bg-indigo-600 transition-all duration-500 active:bg-indigo-700">Submit <BsSend /></button>
+         <button type="submit" className="flex justify-center items-center gap-3 text-black py-3 px-7 bg-white rounded-full text-md mt-4 font-semibold hover:bg-[#2F2D29] hover:text-white transition-all duration-500 active:bg-white">Submit <FaCheck /></button>
         </form>
       </div>
     </div>
