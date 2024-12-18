@@ -1,37 +1,5 @@
 import React from "react";
-
-const questions = [
-  "WAP to display the word 'welcome'",
-  "WAP to take a variable int and input the value from the user and dipslay it.",
-  "WAP to add 2 numbers entered by the user and display the result.",
-  "WAP program to calculate the area and perimeter of circle.",
-  "WAP to find maximum between five numbers.",
-  "WAP to find minimum between five numbers.",
-  "WAP to find maximum in list numbers.",
-  "WAP to find minimum in list numbers.",
-  "WAP to check whether a number is divisible by 5 and 11 or not.",
-  "WAP to print 'welcome' 10 times using for and while loop.",
-  "WAP to print all the odd numbers from 1 to 30.",
-  "WAP to print all numbers divisible by 3 and 5 from 1 to 30.",
-  "WAP to print the reverse string.",
-  "WAP to print the reverse number."
-]
-
-const f_question = [
-  "Write a function to addition two number.",
-  "Write a function to substract two number.",
-  "Write a function to multiply two number.",
-  "Write a function to division two number.",
-  "Write a function to print the list.",
-  "Write a function to add new element on the list.",
-  "Write a function to remove last element on the list.",
-  "Write a function to print if the list is empty or not.",
-  "Write a function to print all the even number with the given range.",
-  "Write a function to print all the odd number with the given range.",
-  "Write a function to sum all the number in the list without using sum() function.",
-  "Write a function to print the max number between two number.",
-  "Write a function to print the min number between two number."
-]
+import { questions, string_questions, function_questions, while_if_questions, if_questions, list_questions } from '../data/jsonData.js';
 
 const Function = () => {
   return (
@@ -40,7 +8,7 @@ const Function = () => {
       <div>
         <h3 className="text-indigo-300 font-medium text-xl sm:text-4xl transition-all duration-600">Python Questions</h3>
 
-        <ul className="select-none mt-6 list-disc marker:text-indigo-400 pl-3 space-y-3">
+        <ul className="select-none mt-6 list-decimal marker:text-indigo-400 pl-3 space-y-3">
           {
             questions.map((data, i) => {
               return (
@@ -49,13 +17,61 @@ const Function = () => {
             }) 
           }
         </ul>
+        <h3 className="text-indigo-300 font-medium text-xl sm:text-4xl transition-all mt-10 duration-600">Python String Questions</h3>
+
+        <ul className="select-none mt-6 list-decimal marker:text-indigo-400 pl-3 space-y-3">
+          {
+            string_questions.map((data, i) => {
+              return (
+                <li key={i}>{data}</li>
+              )
+            }) 
+          }
+        </ul>
+
+        <h3 className="text-indigo-300 font-medium text-xl sm:text-4xl transition-all mt-10 duration-600">Python List Questions</h3>
+
+        <ul className="select-none mt-6 list-decimal marker:text-indigo-400 pl-3 space-y-3">
+          {
+            list_questions.map((data, i) => {
+              return (
+                <li key={i}>{data}</li>
+              )
+            }) 
+          }
+        </ul>
+
+        <h3 className="text-indigo-300 font-medium text-xl sm:text-4xl transition-all mt-10 duration-600">Python If Else Statement Questions</h3>
+
+        <ul className="select-none mt-6 list-decimal marker:text-indigo-400 pl-3 space-y-3">
+          {
+            if_questions.map((data, i) => {
+              return (
+                <li key={i}>{data}</li>
+              )
+            }) 
+          }
+        </ul>
+
+        <h3 className="text-indigo-300 font-medium text-xl sm:text-4xl transition-all mt-10 duration-600">Python If statement using While Loop Questions</h3>
+
+        <ul className="select-none mt-6 list-decimal marker:text-indigo-400 pl-3 space-y-3">
+          {
+            while_if_questions.map((data, i) => {
+              return (
+                <li key={i}>{data}</li>
+              )
+            }) 
+          }
+        </ul>
+
         
         <div>
           <h3 className="text-indigo-300 font-medium text-xl sm:text-4xl mt-10">Python Function</h3>
 
-          <ul className="select-none mt-6 list-disc marker:text-indigo-400 pl-3 space-y-3">
+          <ul className="select-none mt-6 list-decimal marker:text-indigo-400 pl-3 space-y-3">
           {
-            f_question.map((data, i) => {
+            function_questions.map((data, i) => {
               return (
                 <div key={i}>
                   <li>{data}</li>
