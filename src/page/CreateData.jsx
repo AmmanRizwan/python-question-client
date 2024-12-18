@@ -29,7 +29,6 @@ const CreateData = () => {
     <div className="text-white min-h-screen flex justify-center">
       <div className="w-5/6">
 
-
       <div className="text-xl sm:text-3xl text-center py-4 font-bold">SEND AN ANSWER WITH QUESTION</div>
         <form onSubmit={(e) => handleSubmit(e)} className="mb-20">
           <div className="flex flex-col ">
