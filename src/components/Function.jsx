@@ -94,6 +94,7 @@ const Function = () => {
           <div>def add_element(arr, element):
           <div className="pl-4">arr.append(element)</div>
           </div>
+          <div>add_element(arr, element)</div>
           <p>print(arr)</p>
           <br />
           <div className="text-green-500">output:</div>
@@ -102,8 +103,8 @@ const Function = () => {
       </div>
 
       <div className="select-none">
-      <h3 className="select-none text-white font-medium text-xl sm:text-4xl my-10">Examples 2</h3>
-          <div className="font-medium p-3 bg-[#2F2D29] rounded-xl mt-4">
+      <h3 className="select-none text-white text-xl sm:text-4xl my-10">Examples 2</h3>
+          <div className=" p-3 bg-[#2F2D29] rounded-xl mt-4">
             <div className="text-green-500">input:</div>
             <div>def greet():</div>
             <p className="pl-4">print("Good Morning")</p>
@@ -112,6 +113,27 @@ const Function = () => {
             <div>Good Morning</div>
           </div>
       </div>
+      
+      <div className="select-none">
+      <h3 className="select-none text-white text-xl sm:text-4xl my-10">Examples 3</h3>
+          <div className="leading-[30px] p-3 bg-[#2F2D29] rounded-xl mt-4">
+            <div className="text-green-500">how to create a function?</div>
+            <div>Step 1: use def keyword and give a name of the function</div>
+            <div>def greet():</div>
+            <div className="text-red-400">Warning: After the def keyword with name of a function a line should be indentate other wise the function declartion may have a problem</div>
+            <div>Step 2: write your code as you write for your program</div>
+            <p className="pl-4">print("Good Morning")</p>
+            <br />
+            <div>Step 3: After finishing your code. You have to call the function with his name</div>
+            <div>greet()</div>
+            <div className="text-red-400">Warning: The function name should not be indentate as a function otherwise it may cause an error.</div>
+            <div className="text-green-500">output:</div>
+            <div>Good Morning</div>
+          </div>
+      </div>
+
+      <div className="my-3">I Think You May have a Question.. <br />When you use parameter or argument.</div>
+      <div>The Above question is without argument but the <strong>Example 1</strong> is with Argument you can relate 😊</div>
     </div>
     </div>
   )
