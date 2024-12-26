@@ -40,7 +40,7 @@ const CreateData = () => {
             <label className="text-xl sm:text-2xl my-4">Code:</label>
             <textarea type="text" value={formData.code} onChange={(e) => setFormData({...formData, code:e.target.value})} placeholder="Enter the Code" className="h-96 textarea textarea-info" />
           </div>
-         <button type="submit" onClick={() => setLoading(true)} className="btn mt-5">{loading ?  <span className="loading loading-spinner"></span> : null} {loading ? "Loading" : "Submit"}</button>
+         <button type="submit" onClick={() => setLoading(true)} className="btn mt-5">{loading ?  <span className="loading loading-spinner"></span> : null} {loading ? "Sending" : "Send"}</button>
         </form>
       </div>
     </div>
