@@ -7,8 +7,8 @@ const Example = () => {
     <h3 className="text-indigo-300 font-medium text-xl sm:text-4xl">Python Function:</h3>
     <div className="sm:text-4xl mb-10 text-xl">Examples 1</div>
 
-      <div className="mockup-code">
-        <pre data-prefix="$"><code>Add new element into the list please type this and run</code></pre>
+      <div className="mockup-code pr-4">
+        <pre data-prefix="$"><code>Add new element into the list please type this and run  </code></pre>
         <pre data-prefix=">"><code>arr = [1, 2, 3, 4, 5, 6]</code></pre>
         <pre data-prefix=">"><code>element = 7</code></pre>
         <pre data-prefix=">"><code>def add_element(arr, element):</code></pre>
@@ -21,8 +21,8 @@ const Example = () => {
     <div className="select-none">
     <h3 className="select-none text-white text-xl sm:text-4xl my-10">Examples 2</h3>
     
-    <div className="mockup-code">
-        <pre data-prefix="$"><code>Function without argument</code></pre>
+    <div className="mockup-code pr-4">
+        <pre data-prefix="$"><code>Function without argument  </code></pre>
         <pre data-prefix=">"><code>def greet():</code></pre>
         <pre data-prefix=">"><code>    print("Good Morning")</code></pre>
         <pre data-prefix=">"><code>greet()</code></pre>
@@ -32,14 +32,14 @@ const Example = () => {
     
     <div className="select-none">
     <h3 className="select-none text-white text-xl sm:text-4xl my-10">Examples 3</h3>
-    <div className="mockup-code">
+    <div className="mockup-code pr-4">
         <pre data-prefix="$"><code>how to create a function?</code></pre>
 
         <pre data-prefix="1" className="text-success"><code>Step 1: use def keyword and give a name of the function</code></pre>
 
         <pre data-prefix=">"><code>def greet():</code></pre>
 
-        <pre data-prefix="#" className="text-error"><code>Warning: After the def keyword with name of a function a line should be indentate other wise the function declartion may have a problem</code></pre>
+        <pre data-prefix="#" className="text-error"><code>Warning: After the def keyword with name of a function a line should be indentate other wise the function declartion may have a problem    </code></pre>
 
         <pre data-prefix="2" className="text-success"><code>Step 2: write your code as you write for your program</code></pre>
 

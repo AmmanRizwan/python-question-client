@@ -50,14 +50,14 @@ const User = () => {
                 data.map((data, index) => {
                   return (
                     <div key={index} className="mb-4">
-                    <div onClick={() => handleSelect(data.id)} key={index} className={`${select === data.id ? "rounded-t-xl" : "rounded-xl"} select-none cursor-pointer bg-base-200 collapse-title text-md text-white flex justify-between items-center`}>
+                    <div onClick={() => handleSelect(data.id)} key={index} className={`${select === data.id ? "rounded-t-xl" : "rounded-xl"} select-none cursor-pointer bg-base-200 collapse-title text-md text-white flex justify-between items-center pr-5`}>
                       <div>{data.question}
                       </div>
                       <div className="flex gap-4"> {select === data.id ? <CgMathPlus size={24} /> : <CgMathMinus size={24} />}</div>
                     </div>
                     {
                       (select === data.id && data.code) ? 
-                    <div className={`bg-base-300 collapse-title rounded-b-xl text-sm text-white flex justify-between items-center`}>
+                    <div className={`bg-base-300 collapse-title rounded-b-xl text-sm text-white flex justify-between items-center pr-5`}>
                       <div>
                           <pre><code>{data.code}</code></pre>
                         </div>
