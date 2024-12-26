@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from '../images/icon.png';
-import { FaUpload, FaUser } from "react-icons/fa";
 
 
 const NavBar = () => {
@@ -30,9 +29,11 @@ const NavBar = () => {
               </button>
             </Link>
         </div>
+        <Link to={"/"}>
         <div className="navbar-center">
           <a className="btn btn-ghost text-xl"><img className="w-6" src={logo} alt={"Python Logo"} /> Python Question</a>
         </div>
+        </Link>
         <div className="navbar-end">
           <Link to={"/senddata"}>
           <button className="btn btn-ghost btn-circle">
