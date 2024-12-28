@@ -15,6 +15,7 @@ const CreateData = () => {
           body: JSON.stringify(formData)
         });
         const result = await res.json();
+        console.log(result.message);
         setFormData({question: "", code: ""});
         setPopUp(true);
         setLoading(false);
@@ -26,7 +27,7 @@ const CreateData = () => {
 
   return (
     <>
-    <div className="text-white min-h-screen flex justify-center">
+    <div className="text-white flex justify-center">
       <div className="w-5/6">
 
       <div className="text-xl sm:text-3xl text-center py-4 font-bold">SEND AN ANSWER WITH QUESTION</div>

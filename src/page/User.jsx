@@ -22,6 +22,7 @@ const User = () => {
         }
       );
       const data = await response.json();
+      console.log(data.message);
       setDeletePopUp(true);
     }
 

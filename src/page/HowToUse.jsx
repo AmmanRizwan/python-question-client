@@ -10,7 +10,6 @@ const HowToUse = () => {
         <source src={DEMO} type="video/mp4" />
       </video>
       <p className="mb-10">You Can Run Your Program As You Have Run in Your Computer. This is Complete Refrence How You Can Submit Your Code in this App.</p>
-
       </div>
     </section>
   )

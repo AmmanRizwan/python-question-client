@@ -1,14 +1,9 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from '../images/icon.png';
 
 
 const NavBar = () => {
-  const location = useLocation();
-
-  const getBackground = (path) => {
-    return location.pathname === path ? "bg-base-100" : "";
-  }
   return (
       <div className="navbar bg-base-100">
         <div className="navbar-start">
