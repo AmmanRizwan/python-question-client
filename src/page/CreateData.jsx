@@ -4,6 +4,7 @@ const CreateData = () => {
   const [formData, setFormData] = useState({question: "", code: ""});
   const [popUp, setPopUp] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,7 +16,7 @@ const CreateData = () => {
           body: JSON.stringify(formData)
         });
         const result = await res.json();
-        console.log(result.message);
+        setMessage(result.message);
         setFormData({question: "", code: ""});
         setPopUp(true);
         setLoading(false);
@@ -60,7 +61,7 @@ const CreateData = () => {
                 d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <div>
-              <h3 className="font-bold">Code Save Successfully!!</h3>
+              <h3 className="font-bold">{message}</h3>
             </div>
             <button onClick={() => setPopUp(false)} className="btn btn-sm">Close</button>
           </div>

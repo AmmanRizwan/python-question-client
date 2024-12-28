@@ -6,6 +6,7 @@ import { FaTrash } from "react-icons/fa";
 const User = () => {
   const [data, setData] = useState(null);
   const [deletePop, setDeletePopUp] = useState(false);
+  const [message, setMessage] = useState('');
 
   useEffect(()  => {
     fetch('https://question-server-fpyn.onrender.com/api/data/', { method: "GET" })
@@ -22,7 +23,7 @@ const User = () => {
         }
       );
       const data = await response.json();
-      console.log(data.message);
+      setMessage(data.message);
       setDeletePopUp(true);
     }
 
@@ -95,7 +96,7 @@ const User = () => {
                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <div>
-                <h3 className="font-bold">Code Delete Successfully!!</h3>
+                <h3 className="font-bold">{message}</h3>
               </div>
               <button onClick={() => setDeletePopUp(false)} className="btn btn-sm">Close</button>
             </div>
