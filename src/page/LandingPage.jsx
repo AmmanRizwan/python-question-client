@@ -12,7 +12,7 @@ const LandingPage = () => {
         <h1 className="my-5 text-3xl font-bold text-white">Your Ultimate Resource for Python Questions!</h1>
         <p>Explore a wide range of Python questions and answers to boost your coding skills. Whether you're just starting or looking to sharpen your expertise, our resources will help you tackle challenges with ease and confidence.</p>
         <div className="flex gap-5">
-       <Link to='/python'><button className="btn btn-wide my-5 rounded-full items-center flex mt-10">Get Started<BiChevronRight size={24}/></button></Link><Link to={'/use'}><div className="btn btn-wide rounded-full bg-lime-300 text-black hover:bg-lime-500 items-center flex mt-10">How To Use<BiChevronRight size={24}/></div></Link>
+       <Link to='/python'><button className="btn sm:btn-wide my-5 rounded-full items-center flex mt-10">Get Started<BiChevronRight size={24}/></button></Link><Link to={'/use'}><div className="btn sm:btn-wide rounded-full bg-lime-300 text-black hover:bg-lime-500 items-center flex mt-10">How To Use<BiChevronRight size={24}/></div></Link>
         </div>
       </div>
       <div className="lg:w-3/2">
