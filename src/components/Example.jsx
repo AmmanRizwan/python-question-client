@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Example = () => {
   return (
@@ -160,12 +159,7 @@ const Example = () => {
       </div>
       <div className="diff-resizer"></div>
       </div>
-    </div>
-
-  <div className="my-10">
-    <p>There is the Link You will know who you can submit your code in the home page.</p>
-    <Link to={'/use'}><div className="btn flex text-md my-5 rounded-full">How To Use</div></Link>
-  </div>    
+    </div> 
     </>
   )
 }
